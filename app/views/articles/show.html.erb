@@ -1,0 +1,18 @@
+
+<br><div class="container mt-5 custom-container-s">
+<div class="card-body">
+<div class="card mb-3  px-4 py-4">
+
+        <h1><%= @article.title %></h1>
+        <div>
+            <%= Cutword.get(@article.body, 20) %>
+        </div>
+        <br>
+        <div class="btn-group">
+        <%= link_to "Edit Article", edit_article_path(@article), class: "btn btn-primary btn-sm", style: "max-width: 120px; margin: 0 auto;" %>
+        <%= link_to "Delete", @article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-danger btn-sm", style: "max-width: 120px; margin: 0 auto;" %>
+    </div>
+    
+</div>
+</div>
+</div>

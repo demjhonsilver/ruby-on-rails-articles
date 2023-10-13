@@ -1,0 +1,17 @@
+<div class="container-md mt-5 custom-container">
+  <br>
+  <h1>Articles</h1>
+  <% @articles.each do |article| %>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h2 class="card-title"><%= Cutword.get(article.title, 40) %></h2>
+      <p class="card-text"><%= Cutword.get(article.body, 200) %></p>
+
+      <div class="btn-group d-flex justify-content-end">
+        <%= link_to 'Read article', article, class: "btn btn-primary", style: "max-width: 150px;" %>
+      </div>
+
+    </div>
+  </div>
+  <% end %>
+</div>
