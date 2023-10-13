@@ -100,7 +100,7 @@ GEM
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
-    cutword (1.0.0.alpha1)
+    cutword (1.0.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -262,7 +262,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.3, >= 5.3.1)
   capybara
-  cutword (= 1.0.0.alpha1)
+  cutword (~> 1.0)
   debug
   importmap-rails
   jbuilder

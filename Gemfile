@@ -15,7 +15,7 @@ gem 'bootstrap', '~> 5.3', '>= 5.3.1'
 
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 
-gem 'cutword', '1.0.0.alpha1'
+gem 'cutword', '~> 1.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
